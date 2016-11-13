@@ -17,6 +17,7 @@ var estrellasRadio;
 var estrellas = [];
 
 //death star:
+var deathstarURL;
 var deathstarCheip;
 var deathstarRadi;
 var deathstarVect;
@@ -31,10 +32,19 @@ var xfighterVect2;
 var xfighterVect3;
 var xfighterColor = '#0000FF';//borrar;
 
+
+
+var imgURL = 'img/SW_deathstar.svg';
+
+var img;
+var htsmlImg;
+
+
 /****************************************************************************************************/
 function preload()
 {
-  deathstarCheip = loadImage('img/SW_elemento_deathstar.svg');
+  var deathstarURL = 'http:'+'//www.clker.com/cliparts/9/0/f/5/1194986802274589086football_ball_brice_boye_01.svg.med.png';
+
   //xfighterCheip = loadImage('SW_elemento_xWingFIghter.svg');
 }
 /****************************************************************************************************/
@@ -66,6 +76,7 @@ function setup()
   //death star:
   deathstarRadi = x / 3;
   deathstarVect = new p5.Vector(mX, mY);
+  deathstarCheip = createImage(deathstarURL);
 
   //xfighter:
   xfighterRadiX = x / 4;
@@ -73,7 +84,11 @@ function setup()
   xfighterVect1 = new p5.Vector(mX / 2, y + xfighterRadiY);
   xfighterVect2 = new p5.Vector(mX, y + xfighterRadiY);
   xfighterVect3 = new p5.Vector(mX + mX / 2, y + xfighterRadiY);
+  img =  loadImage(imgURL);
 
+   // this works
+   htsmlImg = createImg(imgURL);
+   htsmlImg.width = mouseX;
 }
 /****************************************************************************************************/
 function draw()
@@ -81,7 +96,9 @@ function draw()
   fondoMostrar();
   datosMostrar();
   elementosMostrar();
-  image(deathstarCheip, 200, 200);//dsfdsfdsfsdfsdfdsfsdfsdfsdfsdfsdfsdfdsfsdfsdfdsfsdf
+  //var d2 = loadImage(deathstarURL);
+  image(img,100,100);
+  //image(d2, mouseX, mouseY);//dsfdsfdsfsdfsdfdsfsdfsdfsdfsdfsdfsdfdsfsdfsdfdsfsdf
 }
 /****************************************************************************************************/
 function mouseWheel(event) {
