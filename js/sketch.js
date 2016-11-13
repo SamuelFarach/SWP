@@ -76,7 +76,7 @@ function setup()
   //death star:
   deathstarRadi = x / 3;
   deathstarVect = new p5.Vector(mX, mY);
-  deathstarCheip = createImage(deathstarURL);
+  //deathstarCheip = createImage(deathstarURL);
 
   //xfighter:
   xfighterRadiX = x / 4;
