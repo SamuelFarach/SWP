@@ -44,8 +44,6 @@ var htsmlImg;
 /****************************************************************************************************/
 function preload()
 {
-  var deathstarURL = 'http:'+'//www.clker.com/cliparts/9/0/f/5/1194986802274589086football_ball_brice_boye_01.svg.med.png';
-
   //xfighterCheip = loadImage('SW_elemento_xWingFIghter.svg');
 }
 /****************************************************************************************************/
