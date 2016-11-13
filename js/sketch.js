@@ -34,7 +34,7 @@ var xfighterColor = '#0000FF';//borrar;
 /****************************************************************************************************/
 function preload()
 {
-  deathstarCheip = loadImage('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+  deathstarCheip = createImage('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
   //xfighterCheip = loadImage('SW_elemento_xWingFIghter.svg');
 }
 /****************************************************************************************************/
