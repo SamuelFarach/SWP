@@ -88,7 +88,7 @@ function setup()
   img =  loadImage(imgURL);
 
    // this works
-   //htsmlImg = createImg(imgURL);
+   htsmlImg = createImg(imgURL);
    //htsmlImg.width = mouseX;
 }
 /****************************************************************************************************/
