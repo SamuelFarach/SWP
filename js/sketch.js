@@ -97,7 +97,7 @@ function draw()
   datosMostrar();
   elementosMostrar();
   //var d2 = loadImage(deathstarURL);
-  image(img,100,100);
+  image(img, mouseX, mouseY);
   //image(d2, mouseX, mouseY);//dsfdsfdsfsdfsdfdsfsdfsdfsdfsdfsdfsdfdsfsdfsdfdsfsdf
 }
 /****************************************************************************************************/
@@ -133,7 +133,7 @@ function elementosMostrar()
   //death star:
   fill(deathstarColor);
   //ellipse(deathstarVect.x, deathstarVect.y, deathstarRadi, deathstarRadi);
-  image(deathstarCheip, 400, 400);
+  image(deathstarCheip, mouseX, mouseY - 100);
   //death star:
   fill(xfighterColor);
   //ellipse(xfighterVect1.x, xfighterVect1.y, xfighterRadi, xfighterRadi);
