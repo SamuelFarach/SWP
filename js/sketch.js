@@ -34,7 +34,7 @@ var xfighterColor = '#0000FF';//borrar;
 /****************************************************************************************************/
 function preload()
 {
-  deathstarCheip = createImage('img/SW_elemento_01.svg');
+  deathstarCheip = loadImage('img/SW_elemento_deathstar.svg');
   //xfighterCheip = loadImage('SW_elemento_xWingFIghter.svg');
 }
 /****************************************************************************************************/
@@ -116,7 +116,7 @@ function elementosMostrar()
   //death star:
   fill(deathstarColor);
   //ellipse(deathstarVect.x, deathstarVect.y, deathstarRadi, deathstarRadi);
-
+  image(deathstarCheip, 400, 400);
   //death star:
   fill(xfighterColor);
   //ellipse(xfighterVect1.x, xfighterVect1.y, xfighterRadi, xfighterRadi);
