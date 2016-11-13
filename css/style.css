@@ -1,0 +1,23 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+body
+{
+  <!--background: black;-->
+}
+canvas
+{
+  vertical-align: top;
+  z-index:-1;
+}
+#separador
+{
+  height: 750px;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #FF7700;
+  position: relative;
+  z-index: 1;
+}

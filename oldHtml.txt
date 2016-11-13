@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--*************************-->
+<html>
+<!--*************************-->
+<head>
+  <title></title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport"  content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"  />
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+  <script src="libraries/sketch.js" type="text/javascript"></script>
+  <!--*************************-->
+  <script>
+  var w = screen.width;
+  var h = screen.height;
+  document.title = h;
+
+  var yPos;
+  var im01; //Death Star;
+  var im02; //X Fighter;
+  var im02_2; //X Fighter;
+
+
+  function parallex()
+  {
+    im01 = document.getElementById('SW_elemento_01');
+    im02 = document.getElementById('SW_elemento_xWingFIghter');
+    im03 = document.getElementById('SW_elemento_xWingFIghter_2');
+    yPos = window.pageYOffset;
+    document.title = yPos;
+
+      im02.style.top = -yPos * 1.1 + "px";
+  }
+  window.addEventListener('scroll', parallex)
+  </script>
+</head>
+<!--*************************-->
+<body>
+  <div id=div_SW_elemento_01>
+    <img id="SW_elemento_01" src="img/SW_elemento_01.svg" height="500px" width="100%"/>
+  </div>
+  <!--SEP--><div class="separador" height="100%"></div>
+  <div id=div_SW_elemento_xWingFIghter>
+    <img id="SW_elemento_xWingFIghter" src="img/SW_elemento_xWingFIghter.svg" height="500px" width="50%"/>
+  </div>
+  <div id=div_SW_elemento_xWingFIghter_2>
+    <img id="SW_elemento_xWingFIghter_2" src="img/SW_elemento_xWingFIghter.svg" height="500px" width="100%"/>
+  </div>
+  <div id=div_SW_elemento_xWingFIghter_3>
+    <img id="SW_elemento_xWingFIghter_3" src="img/SW_elemento_xWingFIghter.svg" height="500px" width="150%"/>
+  </div>
+</body>
+<!--*************************-->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+#element::-webkit-scrollbar {
+    display: none;
+}
+If you want all scrollbars hidden, use
+
+::-webkit-scrollbar {
+    display: none;
+}
+I'm not sure about restoring - this did work, but there might be a right way to do it:
+
+::-webkit-scrollbar {
+    display: block;
+}
+body
+{
+  <!--background: black;-->
+}
+canvas
+{
+  vertical-align: top;
+}
+img
+{
+  position: relative;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+#SW_elemento_01
+{
+  position:fixed;
+  z-index: 0;
+}
+#SW_elemento_xWingFIghter,#SW_elemento_xWingFIghter_2, #SW_elemento_xWingFIghter_3
+{
+    position: relative;
+  z-index: 1;
+}
+#separador
+{
+  height: 750px;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #FF7700;
+  position: relative;
+  z-index: 1;
+}
