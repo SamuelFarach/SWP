@@ -64,6 +64,7 @@ function setup()
   y = height;
   mX = x / 2;
   mY = y / 2;
+  imageMode(CENTER);
 
   //estrellas:
   estrellasRadio = width / 300;
