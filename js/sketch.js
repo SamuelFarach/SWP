@@ -92,7 +92,7 @@ function draw()
   datosMostrar();
   elementosMostrar();
   //var d2 = loadImage(deathstarURL);
-  image(img, 0, 0);
+  image(img, mouseX, mouseY);
   //image(d2, mouseX, mouseY);//dsfdsfdsfsdfsdfdsfsdfsdfsdfsdfsdfsdfdsfsdfsdfdsfsdf
 }
 /****************************************************************************************************/
