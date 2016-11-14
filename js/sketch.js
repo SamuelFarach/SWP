@@ -44,6 +44,7 @@ var htsmlImg;
 /****************************************************************************************************/
 function preload()
 {
+  img =  loadImage('img/SW_deathstar.svg');
   //xfighterCheip = loadImage('SW_elemento_xWingFIghter.svg');
 }
 /****************************************************************************************************/
@@ -83,11 +84,6 @@ function setup()
   xfighterVect1 = new p5.Vector(mX / 2, y + xfighterRadiY);
   xfighterVect2 = new p5.Vector(mX, y + xfighterRadiY);
   xfighterVect3 = new p5.Vector(mX + mX / 2, y + xfighterRadiY);
-  img =  loadImage(imgURL);
-
-   // this works
-   htsmlImg = createImg(imgURL);
-   //htsmlImg.width = mouseX;
 }
 /****************************************************************************************************/
 function draw()
