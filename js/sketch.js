@@ -44,7 +44,7 @@ var htsmlImg;
 /****************************************************************************************************/
 function preload()
 {
-  img =  loadImage('img/SW_deathstar.svg');
+  //img =  loadImage('img/SW_deathstar.svg');
   //xfighterCheip = loadImage('SW_elemento_xWingFIghter.svg');
 }
 /****************************************************************************************************/
@@ -92,7 +92,7 @@ function draw()
   datosMostrar();
   elementosMostrar();
   //var d2 = loadImage(deathstarURL);
-  image(img, mouseX, mouseY);
+  //image(img, mouseX, mouseY);
   //image(d2, mouseX, mouseY);//dsfdsfdsfsdfsdfdsfsdfsdfsdfsdfsdfsdfdsfsdfsdfdsfsdf
 }
 /****************************************************************************************************/
