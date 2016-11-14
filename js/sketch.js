@@ -126,15 +126,6 @@ function datosMostrar()
 function elementosMostrar()
 {
   //death star:
-  fill(deathstarColor);
-  //ellipse(deathstarVect.x, deathstarVect.y, deathstarRadi, deathstarRadi);
-  image(deathstarCheip, 0, 0);
-  //death star:
-  fill(xfighterColor);
-  //ellipse(xfighterVect1.x, xfighterVect1.y, xfighterRadi, xfighterRadi);
-  //ellipse(xfighterVect2.x, xfighterVect2.y, xfighterRadi, xfighterRadi);
-  //ellipse(xfighterVect3.x, xfighterVect3.y, xfighterRadi, xfighterRadi);
-
 }
 /****************************************************************************************************/
 
