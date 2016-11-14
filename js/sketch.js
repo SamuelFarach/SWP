@@ -64,7 +64,6 @@ function setup()
   y = height;
   mX = x / 2;
   mY = y / 2;
-  imageMode(CENTER);
 
   //estrellas:
   estrellasRadio = width / 300;
@@ -93,7 +92,6 @@ function draw()
   datosMostrar();
   elementosMostrar();
   //var d2 = loadImage(deathstarURL);
-  //image(img, mouseX, mouseY);
   //image(d2, mouseX, mouseY);//dsfdsfdsfsdfsdfdsfsdfsdfsdfsdfsdfsdfdsfsdfsdfdsfsdf
 }
 /****************************************************************************************************/
@@ -126,7 +124,9 @@ function datosMostrar()
 /****************************************************************************************************/
 function elementosMostrar()
 {
+  imageMode(CENTER);
   //death star:
+  image(img, mouseX, mouseY);
 }
 /****************************************************************************************************/
 
